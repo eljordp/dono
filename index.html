@@ -296,7 +296,7 @@
       margin-bottom: 6px;
     }
 
-    .form-group input {
+    .form-group input, .form-group select {
       width: 100%;
       padding: 12px 14px;
       border: 1.5px solid #ddd;
@@ -304,9 +304,10 @@
       font-size: 15px;
       transition: border-color 0.2s;
       outline: none;
+      background: white;
     }
 
-    .form-group input:focus { border-color: #0057a8; }
+    .form-group input:focus, .form-group select:focus { border-color: #0057a8; }
 
     .form-submit {
       width: 100%;
@@ -387,7 +388,7 @@
 
   <!-- Top announcement bar -->
   <div class="top-bar">
-    Limited Availability &mdash; Free Solar Savings Reports for SCE Customers
+    Only Available to Qualifying SCE Homeowners &mdash; Check Your Eligibility
   </div>
 
   <!-- Header -->
@@ -398,11 +399,11 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-badge">SCE Customers &bull; SoCal Area</div>
-    <h1>Stop Overpaying SCE.<br>Save <span>30&ndash;40%</span> on Your Electric Bill.</h1>
-    <p>Free installation. No money out of pocket. Just a lower electric bill &mdash; powered by solar instead of the utility company.</p>
-    <a href="#free-report" class="hero-cta">Get My Free Solar Report &rarr;</a>
-    <div class="hero-sub">Free, no obligation &bull; Takes 30 seconds</div>
+    <div class="hero-badge">Eligibility Required &bull; SoCal SCE Customers Only</div>
+    <h1>SoCal Homeowners: You May Qualify for <span>30&ndash;40% Off</span> Your Electric Bill.</h1>
+    <p>A limited program is helping qualifying SCE customers switch to solar &mdash; free installation, no money out of pocket, and a fixed rate that never goes up.</p>
+    <a href="#free-report" class="hero-cta">Check If You Qualify &rarr;</a>
+    <div class="hero-sub">Not everyone qualifies &bull; Free to check &bull; Takes 30 seconds</div>
   </section>
 
   <!-- Stats -->
@@ -421,24 +422,47 @@
     </div>
   </div>
 
-  <!-- How it works -->
+  <!-- Qualification criteria -->
   <div class="section">
-    <h2 class="section-title">How Solar as a Service Works</h2>
+    <h2 class="section-title">Do You Qualify?</h2>
+    <p class="section-sub">This program isn't for everyone. You must meet the following criteria:</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>SCE Customer</h3>
+        <p>You must currently be a Southern California Edison customer paying a monthly electric bill.</p>
+      </div>
+      <div class="step">
+        <div class="step-number"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Homeowner</h3>
+        <p>You must own your home. Renters are not eligible for this program.</p>
+      </div>
+      <div class="step">
+        <div class="step-number"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Monthly Bill $150+</h3>
+        <p>Your average SCE bill should be at least $150/month to qualify for meaningful savings.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section" style="padding-top: 0;">
+    <h2 class="section-title">How It Works If You're Approved</h2>
     <p class="section-sub">No buying panels. No loans. Just a cheaper bill from day one.</p>
     <div class="steps">
       <div class="step">
         <div class="step-number">1</div>
-        <h3>Get Your Free Report</h3>
-        <p>We analyze your current SCE bill and roof to calculate your exact savings. Takes 2 minutes.</p>
+        <h3>Submit Your Info</h3>
+        <p>We review your SCE bill and roof to determine if you qualify and calculate your exact savings.</p>
       </div>
       <div class="step">
         <div class="step-number">2</div>
         <h3>Free Installation</h3>
-        <p>Solar panels are installed on your roof at no cost. No equipment to buy, no loans, no upfront payments.</p>
+        <p>If approved, solar panels are installed on your roof at no cost. No equipment to buy, no loans, no upfront payments.</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
-        <h3>Save 30-40% Instantly</h3>
+        <h3>Save 30-40% Immediately</h3>
         <p>Your electricity now comes from solar at a fixed rate &mdash; lower than SCE and it never goes up.</p>
       </div>
     </div>
@@ -446,7 +470,7 @@
 
   <!-- Benefits -->
   <div class="benefits-section">
-    <h2 class="section-title" style="margin-bottom: 40px;">Why SoCal Homeowners Are Switching</h2>
+    <h2 class="section-title" style="margin-bottom: 40px;">Why Approved Homeowners Love This Program</h2>
     <div class="benefits-grid">
       <div class="benefit">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0057a8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
@@ -513,12 +537,12 @@
 
   <!-- Form -->
   <section class="form-section" id="free-report">
-    <h2>Get Your Free Solar Savings Report</h2>
-    <p>Find out exactly how much you can save. No cost, no obligation.</p>
+    <h2>Check If You Qualify</h2>
+    <p>See if your home is eligible for the SoCal Solar Savings program.</p>
 
     <div class="form-card">
-      <h3>How Much Can You Save?</h3>
-      <p class="form-sub">Enter your info below &mdash; takes 30 seconds.</p>
+      <h3>Eligibility Check</h3>
+      <p class="form-sub">Answer a few questions to see if you qualify.</p>
 
       <form id="lead-form" onsubmit="handleSubmit(event)">
         <div class="form-group">
@@ -534,17 +558,31 @@
           <input type="text" id="address" name="address" placeholder="123 Main St, City, CA" required>
         </div>
         <div class="form-group">
-          <label for="bill">Average Monthly Electric Bill</label>
-          <input type="text" id="bill" name="bill" placeholder="$200">
+          <label for="homeowner">Do you own your home?</label>
+          <select id="homeowner" name="homeowner" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Yes">Yes, I own my home</option>
+            <option value="No">No, I rent</option>
+          </select>
         </div>
-        <button type="submit" class="form-submit">Get My Free Report &rarr;</button>
-        <p class="form-note">Your information is kept private. No spam, ever.</p>
+        <div class="form-group">
+          <label for="bill">Average Monthly SCE Bill</label>
+          <select id="bill" name="bill" required>
+            <option value="" disabled selected>Select your bill range</option>
+            <option value="Under $150">Under $150</option>
+            <option value="$150 - $250">$150 - $250</option>
+            <option value="$250 - $400">$250 - $400</option>
+            <option value="$400+">$400+</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit">Check My Eligibility &rarr;</button>
+        <p class="form-note">Your information is kept private and only used to determine eligibility.</p>
       </form>
 
       <div id="thank-you" style="display:none; padding: 40px 0; text-align: center;">
-        <div style="font-size: 48px; margin-bottom: 16px;">&#9989;</div>
-        <h3 style="margin-bottom: 8px; color: #0057a8;">Report Requested!</h3>
-        <p style="color: #666; font-size: 15px;">Donovan will reach out within 24 hours with your personalized savings report.</p>
+        <div style="font-size: 48px; margin-bottom: 16px;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0057a8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3 style="margin-bottom: 8px; color: #0057a8;">Application Received!</h3>
+        <p style="color: #666; font-size: 15px;">Donovan will review your eligibility and reach out today with your results.</p>
       </div>
     </div>
 
@@ -575,6 +613,7 @@
         name: document.getElementById('name').value,
         phone: document.getElementById('phone').value,
         address: document.getElementById('address').value,
+        homeowner: document.getElementById('homeowner').value,
         bill: document.getElementById('bill').value
       };
 
